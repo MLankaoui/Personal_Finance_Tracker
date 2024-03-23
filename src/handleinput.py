@@ -3,7 +3,7 @@ def expenses():
     user_expenses = float(user_expenses)
     user_expenses = user_expenses.split(' ')
 
-    return user_expenses
+    return (user_expenses)
 
 
 def income():
@@ -11,7 +11,7 @@ def income():
     user_income = float(user_income)
     user_income = user_income.split(' ')
 
-    return user_income
+    return (user_income)
 
 def calculate_monthly_expenses():
     user_expenses = expenses()
@@ -23,4 +23,16 @@ def calculate_monthly_expenses():
         result += element
 
 
-    return result
+    return (result)
+
+def calculate_monthly_income():
+    user_income = income()
+    user_income = user_income.split(' ')
+    result = 0
+    
+    for element in user_income:
+        element = float(element)
+        result += element
+
+
+    return (result)
