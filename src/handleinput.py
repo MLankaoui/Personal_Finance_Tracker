@@ -14,8 +14,7 @@ def calculate_monthly_expenses(user_expenses):
     result = sum(user_expenses)
     return result
 
-def calculate_monthly_income():
-    user_income = income()
+def calculate_monthly_income(user_income):
     result = sum(user_income)
     return result
 
