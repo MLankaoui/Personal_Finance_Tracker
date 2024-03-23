@@ -1,5 +1,5 @@
 def expenses():
-    user_expenses = input('Enter your expenses')
+    user_expenses = input('Enter your monthly expenses')
     user_expenses = float(user_expenses)
     user_expenses = user_expenses.split(' ')
 
@@ -12,3 +12,15 @@ def income():
     user_income = user_income.split(' ')
 
     return user_income
+
+def calculate_monthly_expenses():
+    user_expenses = expenses()
+    user_expenses = user_expenses.split(' ')
+    result = 0
+    
+    for element in user_expenses:
+        element = float(element)
+        result += element
+
+
+    return result
